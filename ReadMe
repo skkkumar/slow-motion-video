@@ -1,0 +1,40 @@
+**********************
+Slow Motion project
+**********************
+The task is to Write a code using OpenCV which can slow down a video to 25% of its original speed. The input is a 10 sec video clip (24fps). 
+
+Technical details 
+=================
+1) Used farneback optical flow.
+2) Using inverse warping (remap) with linear interpolation
+3) Bluring the optical flow.
+
+Along with this project the following files are attached
+========================================================
+1) slomoalgo.h, slomoalgo.cpp, main.cpp
+2) install.sh (To check if cmake is installed, if not install and build the project)
+3) slomo.avi (Output of 4x slowmotion video of jump.mp4)
+4) jump.mp4 (Source video to test)
+
+=====================
+How to install.
+=====================
+1) Download the slomopro.zip and unzip.
+2) cd slomoproj/
+3) ./install.sh
+
+=====================
+How to run
+=====================
+1) cd build/
+2) Can call in any of the below 3 ways
+   ./slowmotion <Slowing speed> <input video location> <output video location>
+   ./slowmotion 4 ../jump.mp4 ../output.avi
+   ./slowmotion 2
+   ./slowmotion 
+
+
+======================
+
+Note : Incase you face problem in running the executables. Delete the /build folder and follow "How to install" instructions.
+
